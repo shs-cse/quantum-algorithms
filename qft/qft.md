@@ -133,7 +133,7 @@ $$
 Thus, to compute $X$ we only have to iterate over $k$ from $0$ to $\left(\frac N2-1\right)$.
 
 <div align="center">
-<img src="https://shs-cse.github.io/quantum-algorithms/qft/fft_recursion.svg">
+<img src="https://shs-cse.github.io/quantum-algorithms/qft/fft_recursion.svg" width="100%">
 </div>
 
 
