@@ -133,8 +133,26 @@ $$
 Thus, to compute $X$ we only have to iterate over $k$ from $0$ to $\left(\frac N2-1\right)$.
 
 <div align="center">
-<img src="https://shs-cse.github.io/quantum-algorithms/qft/fft_recursion.svg" width="100%">
+<img src="https://shs-cse.github.io/quantum-algorithms/qft/fft_recursion.svg" width="80%">
 </div>
+
+We may write an algorithm for the FFT algorithm as follows:
+```py
+import numpy as np
+
+def FFT(x):
+  N = len(x)
+  if N==1:
+    return x
+  w = np.exp(2j*np.pi/N)
+  X_E = FFT(x[::2])
+  X_O = FFT(x[1::2])
+  X = [0]*N
+  for k in range(N//2):
+    X[k] = X_E[k]/np.sqrt(2) + X_O[k]*w**k/np.sqrt(2)
+    X[k+N//2] = X_E[k]/np.sqrt(2) - X_O[k]*w**k/np.sqrt(2)
+  return X
+```
 
 
 
