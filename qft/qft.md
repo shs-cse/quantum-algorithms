@@ -3,7 +3,7 @@
 *[FFT]: Fast Fourier Transform
 *[QFT]: Quantum Fourier Transform
 
-## Discrete Fourier Transformation
+## Discrete Fourier Transform
 Let us define DFT as follows:
 
 $$
@@ -46,7 +46,7 @@ $$\textrm{QFT} = \frac{1}{\sqrt N}\begin{pmatrix}
 
 This is of course, same as the DFT matrix (maybe except for the normalization factor). One of the important property of this matrix is that it is an unitary matrix and thus it is possible to build a quantum circuit for it.
 
-## Fast Fourier Transformation
+## Fast Fourier Transform
 Directly computing DFT by multiplying the input vector with the DFT matrix has a time complexity of $O(N^2)$. However, there is a more efficient algorithm commonly referred to as FFT. It is a divide and conquer algorithm and has a time complexity of $O(N\log N)$. Let us discuss how FFT improves over DFT before we move onto QFT. 
 Here we are going to explain radix-2 decimation-in-time[^1] FFT algorithm in details.
 
@@ -133,10 +133,10 @@ $$
 Thus, to compute $X$ we only have to iterate over $k$ from $0$ to $\left(\frac N2-1\right)$.
 
 <div align="center">
-<img src="https://shs-cse.github.io/quantum-algorithms/qft/fft_recursion.svg" width="80%">
+<img src="https://shs-cse.github.io/quantum-algorithms/qft/fft_butterfly_unit.svg" width="500ch">
 </div>
 
-We may write an algorithm for the FFT algorithm as follows:
+We may write a python program for the FFT algorithm as follows:
 ```py
 import numpy as np
 
@@ -154,8 +154,32 @@ def FFT(x):
   return X
 ```
 
+## Butterfly Diagram
+If we unravel the recursion, we get a complete diagram to compute $X$ from $x$. Here is an example for $N=2^3=8$.
+
+<div align="center">
+<img src="https://www.cmlab.csie.ntu.edu.tw/cml/dsp/training/coding/transform/images/figure8.gif" width="500ch">
+</div>
 
 
+## Quantum Fourier Transform
+In QFT, we use an $n$-qubit system where $N=2^n$ to denote the input vector $\ket{x}$. The values are encoded in the amplitudes of the computational basis states. In other words, the $j$-th element of $x$ was denoted as $x(j)$ up until now; but in QFT it will be represented with $\braket{j|x}$. We also, note that $\ket{X}=\textrm{QFT}\ket{x}$ and,
+$$
+\begin{align*}
+\ket{x} &= \ket{x_E} + \ket{x_O}\\
+\ket{x_E}
+&=\sum_{j=0}^{\frac N2-1}\ket{2j}\!\!\braket{2j|x}
+=\sum_{j=0}^{\frac N2-1}\ket{j}\!\!\bra{j}\otimes\ket0\!\!\braket{0|x}\\
+\ket{x_O}
+&=\sum_{j=0}^{\frac N2-1}\ket{j}\!\!\bra{j}\otimes\ket1\!\!\braket{1|x}
+\end{align*}
+$$
+
+Rewriting the equations for QFT, we get,
+$$
+\braket{k|X} = \frac{1}{\sqrt2}\braket{k|X_E} + \frac{\omega_N^{k}}{\sqrt2}\braket{k|X_O}$$
+$$\left\langle k+\frac N2\middle|X\right\rangle = \frac{1}{\sqrt2}\braket{k|X_E} - \frac{\omega_N^{k}}{\sqrt2}\braket{k|X_O}
+$$
 
 
 
