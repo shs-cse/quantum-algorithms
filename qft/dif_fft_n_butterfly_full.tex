@@ -1,0 +1,57 @@
+\documentclass[margin=0pt]{standalone} % svg
+% \documentclass[convert, margin=0pt]{standalone} % png, don't forget to change latex compiler
+
+\usepackage{anyfontsize, amssymb, amsmath}
+% \usepackage[shortlabels]{enumitem}
+\usepackage[siunitx, american, RPvoltages]{circuitikz}
+\sisetup{parse-numbers=false}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage[many]{tcolorbox}
+
+% short-hand for resistor units, e.g. 
+% in circuitikz: 1<\MO>, 2<\mA>, 3<\kV>, 4<\uF>, 5<\nH>, 6<\C> 
+% in math-mode: \qty{1}{\MO}
+\DeclareSIUnit{\mO}{\milli\ohm}
+\DeclareSIUnit{\kO}{\kilo\ohm}
+\DeclareSIUnit{\MO}{\mega\ohm}
+
+\usepackage{xcolor}
+% \color{white}
+
+\begin{document}
+\def\n{3}
+\def\N{\fpeval{2^(\n)}}
+\def\ds{1}
+\def\dh{3}
+\def\dy{-1}
+\def\modulo#1#2{\fpeval{trunc(#1-(#2*trunc(#1/#2,0)),0)}}
+\def\getbit#1#2{\fpeval{trunc(#1/2^(#2)-(2*trunc(#1/2^(#2+1),0)),0)}}
+\begin{circuitikz}
+    \foreach\j in {0,...,\fpeval{\N-1}}{
+        \xdef\revj{0}
+        \foreach\stage in {1,...,\n}{
+            \draw \fpeval{((\stage-1)*(\ds+\dh),\dy*\j)}
+            \ifnum\stage=1 node[left]{$x(\j)$}\fi
+            node[ocirc]{}
+            -- ++(\dh*3/4,0)
+            to[short, i_={\scriptsize\ifnum\getbit{\j}{\n-\stage}=1$-1$\else~\fi}, -o]
+            ++(\dh/4,0)
+            to[short, i_={\scriptsize\ifnum\getbit{\j}{\n-\stage}=1$\omega_{N\ifnum\stage>1/\fpeval{2^(\stage-1)}\fi}^{\modulo{\j}{2^(\n-\stage)}}$\else~\fi}, -o]
+            ++(\ds,0)
+            ;
+            \draw \fpeval{((\stage-1)*(\ds+\dh),\dy*\j)}
+            \ifnum\getbit{\j}{\n-\stage}=0
+            edge[-Latex] ++(\dh,\fpeval{\dy*2^(\n-\stage)})
+            \else
+            edge[-Latex] ++(\dh,\fpeval{-\dy*2^(\n-\stage)})
+            \fi
+            ;
+            \xdef\revj{\fpeval{\revj+\getbit{\j}{\stage-1}*2^(\n-\stage)}}
+        }
+        \draw \fpeval{(\n*(\ds+\dh),\dy*\j)}
+        node[right]{$X(\revj)$}
+        ;
+    }
+\end{circuitikz}
+\end{document}
