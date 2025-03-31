@@ -1,0 +1,46 @@
+\documentclass[margin=0pt]{standalone} % svg
+% \documentclass[convert, margin=0pt]{standalone} % png, don't forget to change latex compiler
+
+\usepackage{anyfontsize, amssymb, amsmath}
+% \usepackage[shortlabels]{enumitem}
+\usepackage[siunitx, american, RPvoltages]{circuitikz}
+\sisetup{parse-numbers=false}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage[many]{tcolorbox}
+
+% short-hand for resistor units, e.g. 
+% in circuitikz: 1<\MO>, 2<\mA>, 3<\kV>, 4<\uF>, 5<\nH>, 6<\C> 
+% in math-mode: \qty{1}{\MO}
+\DeclareSIUnit{\mO}{\milli\ohm}
+\DeclareSIUnit{\kO}{\kilo\ohm}
+\DeclareSIUnit{\MO}{\mega\ohm}
+
+\usepackage{xcolor}
+% \color{white}
+
+\begin{document}
+\begin{circuitikz}
+    \draw (0,0)
+    to[short, i=$\frac{1}{\sqrt2}$, inner sep=0pt, current/distance=0.85] (3,-2)
+    (0,-2)
+    to[short, i_=$\frac{1}{\sqrt2}$, inner sep=0pt, current/distance=0.85] (3,0)
+    ;
+    \draw (0,0)
+    node[left]{$x(j)$}
+    node[ocirc]{}
+    to[short, i^=$\frac{1}{\sqrt2}$, current/distance=0.85] ++(3,0)
+    node[adder, scale=0.25, fill=white]{}
+    to[short, i_=~, -o] ++(1,0)
+    node[right]{$x_A(j)$}
+    ;
+    \draw (0,-2)
+    node[left]{$x\left(j+\frac N2\right)$}
+    node[ocirc]{}
+    to[short, i_=$\frac{-1}{\sqrt2}$, current/distance=0.85] ++(3,0)
+    node[adder, scale=0.25, fill=white]{}
+    to[short, i_=$\omega_N^j$, -o] ++(1,0)
+    node[right]{$x_B(j)$}
+    ;
+\end{circuitikz}
+\end{document}
