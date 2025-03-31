@@ -36,7 +36,7 @@
                     \xdef\revj{\fpeval{\revj+\getbit{\j}{\stage-1}*2^(\n-\stage)}}
                     \xdef\xsub{\xsub\ifnum\getbit{\j}{\n-\stage}=0A\else B\fi}
                     \draw \fpeval{((\stage-1)*(\ds+\dh),\dy*\j)}
-                    \ifnum\stage=1 node[left]{$x(\j)$}\fi
+                    \ifnum\stage=1 node[left=12pt]{$x(\j)$}\fi
                     node[ocirc]{}
                     -- ++(\dh*3/4,0)
                     to[short, i_={\ifnum\getbit{\j}{\n-\stage}=1\color{red}$\frac{-1}{\sqrt2}$\else$\frac{1}{\sqrt2}$\fi}, -o]
@@ -44,13 +44,13 @@
                     to[short, i_={\ifnum\getbit{\j}{\n-\stage}=1$\omega_{\ifnum\stage=1N\else\frac{N}{\fpeval{2^(\stage-1)}}\fi}^{\modulo{\j}{2^(\n-\stage)}}$\else~\fi}]
                     ++(\ds,0)
                     node[ocirc]{}
-                    node[above]{\color{black!20}\tiny$x_{\xsub}(\modulo{\j}{2^(\n-\stage)})$}
+                    node[above]{\color{black!30}\tiny$x_{\xsub}(\modulo{\j}{2^(\n-\stage)})$}
                     ;
                     \draw \fpeval{((\stage-1)*(\ds+\dh),\dy*\j)}
                     \ifnum\getbit{\j}{\n-\stage}=0
-                    edge[-Latex] ++(\dh,\fpeval{\dy*2^(\n-\stage)})
+                    to[short, i=~, current/distance=0.96] ++(\dh,\fpeval{\dy*2^(\n-\stage)})
                     \else
-                    edge[-Latex] ++(\dh,\fpeval{-\dy*2^(\n-\stage)})
+                    to[short, i=~, current/distance=0.96] ++(\dh,\fpeval{-\dy*2^(\n-\stage)})
                     \fi
                     ;
                 }
