@@ -22,36 +22,41 @@
 \begin{document}
 \def\n{3}
 \def\N{\fpeval{2^(\n)}}
-\def\ds{1}
-\def\dh{3}
-\def\dy{-1}
+\def\ds{1.5}
+\def\dh{4.5}
+\def\dy{-1.5}
 \def\modulo#1#2{\fpeval{trunc(#1-(#2*trunc(#1/#2,0)),0)}}
 \def\getbit#1#2{\fpeval{trunc(#1/2^(#2)-(2*trunc(#1/2^(#2+1),0)),0)}}
 \begin{circuitikz}
+    % \ctikzset{bipole current style/.style={font=\scriptsize}}
     \foreach\j in {0,...,\fpeval{\N-1}}{
-        \xdef\revj{0}
-        \foreach\stage in {1,...,\n}{
-            \draw \fpeval{((\stage-1)*(\ds+\dh),\dy*\j)}
-            \ifnum\stage=1 node[left]{$x(\j)$}\fi
-            node[ocirc]{}
-            -- ++(\dh*3/4,0)
-            to[short, i_={\scriptsize\ifnum\getbit{\j}{\n-\stage}=1$-1$\else~\fi}, -o]
-            ++(\dh/4,0)
-            to[short, i_={\scriptsize\ifnum\getbit{\j}{\n-\stage}=1$\omega_{N\ifnum\stage>1/\fpeval{2^(\stage-1)}\fi}^{\modulo{\j}{2^(\n-\stage)}}$\else~\fi}, -o]
-            ++(\ds,0)
+            \xdef\revj{0}
+            \xdef\xsub{}
+            \foreach\stage in {1,...,\n}{
+                    \xdef\revj{\fpeval{\revj+\getbit{\j}{\stage-1}*2^(\n-\stage)}}
+                    \xdef\xsub{\xsub\ifnum\getbit{\j}{\n-\stage}=0A\else B\fi}
+                    \draw \fpeval{((\stage-1)*(\ds+\dh),\dy*\j)}
+                    \ifnum\stage=1 node[left]{$x(\j)$}\fi
+                    node[ocirc]{}
+                    -- ++(\dh*3/4,0)
+                    to[short, i_={\ifnum\getbit{\j}{\n-\stage}=1\color{red}$\frac{-1}{\sqrt2}$\else$\frac{1}{\sqrt2}$\fi}, -o]
+                    ++(\dh/4,0)
+                    to[short, i_={\ifnum\getbit{\j}{\n-\stage}=1$\omega_{\ifnum\stage=1N\else\frac{N}{\fpeval{2^(\stage-1)}}\fi}^{\modulo{\j}{2^(\n-\stage)}}$\else~\fi}]
+                    ++(\ds,0)
+                    node[ocirc]{}
+                    node[above]{\color{black!20}\tiny$x_{\xsub}(\modulo{\j}{2^(\n-\stage)})$}
+                    ;
+                    \draw \fpeval{((\stage-1)*(\ds+\dh),\dy*\j)}
+                    \ifnum\getbit{\j}{\n-\stage}=0
+                    edge[-Latex] ++(\dh,\fpeval{\dy*2^(\n-\stage)})
+                    \else
+                    edge[-Latex] ++(\dh,\fpeval{-\dy*2^(\n-\stage)})
+                    \fi
+                    ;
+                }
+            \draw \fpeval{(\n*(\ds+\dh),\dy*\j)}
+            node[right=12pt]{$X(\revj)$}
             ;
-            \draw \fpeval{((\stage-1)*(\ds+\dh),\dy*\j)}
-            \ifnum\getbit{\j}{\n-\stage}=0
-            edge[-Latex] ++(\dh,\fpeval{\dy*2^(\n-\stage)})
-            \else
-            edge[-Latex] ++(\dh,\fpeval{-\dy*2^(\n-\stage)})
-            \fi
-            ;
-            \xdef\revj{\fpeval{\revj+\getbit{\j}{\stage-1}*2^(\n-\stage)}}
         }
-        \draw \fpeval{(\n*(\ds+\dh),\dy*\j)}
-        node[right]{$X(\revj)$}
-        ;
-    }
 \end{circuitikz}
 \end{document}
