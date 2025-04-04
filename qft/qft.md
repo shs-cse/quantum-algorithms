@@ -205,9 +205,11 @@ Now if we apply the same technique on a larger quantum system, we get the almost
 | $x(2)\\x(6)$ | $\red{0}10\\\red{1}10$ | $x_{\red{A}}(2)\\x_{\red{B}}(2)$ |
 | $x(3)\\x(7)$ | $\red{0}11\\\red{1}11$ | $x_{\red{A}}(3)\\x_{\red{B}}(3)$ |
 
+
 We can clearly see that only the first qubit changes and the other remains as it is. So, if we apply Hadamard on the MSB, we will get the desired butterfly diagram for the first stage. 
 
 Similar argument applies to other stages as well. For example, in the second stage, the butterfly diagrams connects as follows:
+
 
 | Input to Stage 2 | Row Index in Binary  | Output of Stage 2<br>*(ignoring $\omega_N^j$ factor)*|
 |:-:|:-:|:-:|
