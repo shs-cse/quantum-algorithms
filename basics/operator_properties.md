@@ -1,7 +1,8 @@
 # Properties of Some Important Operators on Hilbert Space (Finite Dimensional)
 - Any operator $(M)$ can be separated into Hermitian $(A)$ and anti-Hermitian $(iB)$ parts *[(proof)](#theorem-1)*:
 $$M = A+iB\text{\quad where\quad}A^\dag=A\text{~and~}B^\dag=B$$
-- Few impor
+- Few important types of operators are as follows:
+	- [Normal Operators](#normal-operators)
 
 
 
@@ -352,6 +353,6 @@ $$\begin{align*}
 & [\because\braket{e_k|e_k} = 1]
 \end{align*}$$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwNDYwMjIyNSwtMTE0NTYyMTc2MywxOT
+eyJoaXN0b3J5IjpbMTI5NTY3MjIwMSwtMTE0NTYyMTc2MywxOT
 UwMjIxNDc0LC0xOTYyMDE3OTI1XX0=
 -->
