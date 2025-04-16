@@ -2,7 +2,6 @@
 - Any operator $(M)$ can be separated into Hermitian $(A)$ and anti-Hermitian $(iB)$ parts *[(proof)](#theorem-1)*:
 $$M = A+iB\text{\quad where\quad}A^\dag=A\text{~and~}B^\dag=B$$
 - Few important types of operators are as follows:
-	- [Normal Operators](#normal-operators)
 
 
 
@@ -353,6 +352,6 @@ $$\begin{align*}
 & [\because\braket{e_k|e_k} = 1]
 \end{align*}$$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5NTY3MjIwMSwtMTE0NTYyMTc2MywxOT
-UwMjIxNDc0LC0xOTYyMDE3OTI1XX0=
+eyJoaXN0b3J5IjpbMTQ2MDI5OTg1MSwxMjk1NjcyMjAxLC0xMT
+Q1NjIxNzYzLDE5NTAyMjE0NzQsLTE5NjIwMTc5MjVdfQ==
 -->
