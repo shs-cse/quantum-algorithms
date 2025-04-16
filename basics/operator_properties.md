@@ -340,7 +340,11 @@ All the eigenvalues of Positive semi-definite operators are real and positive, $
 
 > ### Proof
 > Since $S$ is also a Hermitian operator by definition, according to [theorem 10](#theorem-10), all eigenvalues must be real. Moreover, since for any state $\braket{\psi|S|\psi}\geq0$, taking $\ket\psi$ to be the eigenvector $\ket{e_k}$ with eigenvalue $\lambda_k$, we get,
-$$\braket{e_k|S|e_k}\geq0 \implies \braket{e_k|\lambda_k|e_k} \geq0 \implies \lambda_k\braket{e_k|e_k} = \lambda_k \geq0$$
+$$\begin{align*}
+&\braket{e_k|S|e_k}\geq0\\
+\implies &\braket{e_k|\lambda_k|e_k} \geq0\\ 
+\implies &\lambda_k\braket{e_k|e_k} = \lambda_k \geq0
+\end{align*}$$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4MjczNjY3NywtMTk2MjAxNzkyNV19
+eyJoaXN0b3J5IjpbMTg4MzI3OTg5MywtMTk2MjAxNzkyNV19
 -->
