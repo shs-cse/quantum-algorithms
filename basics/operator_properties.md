@@ -334,14 +334,12 @@ Since, both $\lambda_k$ and $|\alpha_k|^2$ is real, $\braket{\psi|H|\psi}\in\mat
 
 
 ### Theorem 12
-All the eigenvalues of Positive semi operators are real,  λ∈Rλ∈R.
+All the eigenvalues of Positive semi-definite operators are real and positive, $\lambda\geq0$.
 
->
-$$\braket{\psi|S|\psi}\geq0$$
 > ### Proof
-> Similar to the proof of [theorem 11](#theorem-11), $\braket{\psi|S|\psi}=\sum_k\lambda_k|\alpha_k|^2$.
+> Similar to the proof of [theorem 10](#theorem-10), $\braket{\psi|S|\psi}=\sum_k\lambda_k|\alpha_k|^2$.
 Since 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDgyMDY2MzMsLTE5NjIwMTc5MjVdfQ
+eyJoaXN0b3J5IjpbLTE3MTUwNjE5OTUsLTE5NjIwMTc5MjVdfQ
 ==
 -->
