@@ -5,7 +5,7 @@ $$M = A+iB\text{\quad where\quad}A^\dag=A\text{~and~}B^\dag=B$$
 generated with https://github.com/derlin/bitdowntoc-->
 - The most important types of operators are as follows:
 	* [Normal Operators $\left(N^\dag N=NN^\dag\right)$](#normal-operators-leftndag-nnndagright)
-	* [Unitary Operators $\left(U^\dag = U^{-1}\right)$](#unitary-operators-leftudag-u-1right)
+	* [Unitary Operators $\left(U^\dag = U^{-1}\right)$](#unitary-operators-leftudag--u-1right)
 	* [Hermitian Operators $\left(H^\dag =H\right)$](#hermitian-operators-lefthdag-hright)
    * [Puali Operators $\{X,Y,Z\}$](#puali-operators-xyz)
    * [Orthogonal Projection Operators $\left(P^2 =P=P^\dag\right)$](#orthogonal-projection-operators-leftp2-ppdagright)
@@ -365,7 +365,7 @@ $$\begin{align*}
 & [\because\braket{e_k|e_k} = 1]
 \end{align*}$$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwNzIyODQ5OSw1NTA0MjYwNjQsMTQ2MD
-I5OTg1MSwxMjk1NjcyMjAxLC0xMTQ1NjIxNzYzLDE5NTAyMjE0
-NzQsLTE5NjIwMTc5MjVdfQ==
+eyJoaXN0b3J5IjpbLTEyNjQ1MDA0MDgsLTkwNzIyODQ5OSw1NT
+A0MjYwNjQsMTQ2MDI5OTg1MSwxMjk1NjcyMjAxLC0xMTQ1NjIx
+NzYzLDE5NTAyMjE0NzQsLTE5NjIwMTc5MjVdfQ==
 -->
