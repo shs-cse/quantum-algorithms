@@ -2,7 +2,7 @@
 - Any operator $(M)$ can be separated into Hermitian $(A)$ and anti-Hermitian $(iB)$ parts *[(proof)](#theorem-1)*:
 $$M = A+iB\text{\quad where\quad}A^\dag=A\text{~and~}B^\dag=B$$
 <!-- Table of contents generated below was 
-generated with https://github.com/derlin/bitdowntoc-->
+generated with https://bitdowntoc.derlin.ch/-->
 - The most important types of operators are as follows:
 	* [Normal Operators $\left(N^\dag N=NN^\dag\right)$](#normal-operators-leftndag-nnndagright)
 	* [Unitary Operators $\left(U^\dag = U^{-1}\right)$](#unitary-operators-leftudag--u-1right)
@@ -365,7 +365,8 @@ $$\begin{align*}
 & [\because\braket{e_k|e_k} = 1]
 \end{align*}$$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjQ1MDA0MDgsLTkwNzIyODQ5OSw1NT
-A0MjYwNjQsMTQ2MDI5OTg1MSwxMjk1NjcyMjAxLC0xMTQ1NjIx
-NzYzLDE5NTAyMjE0NzQsLTE5NjIwMTc5MjVdfQ==
+eyJoaXN0b3J5IjpbMTIwNTkyMjc2MiwtMTI2NDUwMDQwOCwtOT
+A3MjI4NDk5LDU1MDQyNjA2NCwxNDYwMjk5ODUxLDEyOTU2NzIy
+MDEsLTExNDU2MjE3NjMsMTk1MDIyMTQ3NCwtMTk2MjAxNzkyNV
+19
 -->
