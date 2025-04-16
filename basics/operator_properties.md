@@ -15,6 +15,7 @@ Although... the unitary is generated incorrectly. There should be double dash: "
    * [Projection Operators $\left(P^2 =P\right)$](#projection-operators-leftp2-pright)
    * [Pauli Group $\left(\mathcal P\right)$](#pauli-group-leftmathcal-pright)
    * [Clifford Group $\left(C\mathcal PC^\dag=C\mathcal PC^{-1}=\mathcal P'\right)$](#clifford-group-leftcmathcal-pcdagcmathcal-pc-1mathcal-pright)
+- A nice venn diagram to keep in mind: 
 
 
 
@@ -366,8 +367,8 @@ $$\begin{align*}
 & [\because\braket{e_k|e_k} = 1]
 \end{align*}$$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwNzI3MzY3OSwxMzY4MDgxMjY4LDEyMD
-U5MjI3NjIsLTEyNjQ1MDA0MDgsLTkwNzIyODQ5OSw1NTA0MjYw
-NjQsMTQ2MDI5OTg1MSwxMjk1NjcyMjAxLC0xMTQ1NjIxNzYzLD
-E5NTAyMjE0NzQsLTE5NjIwMTc5MjVdfQ==
+eyJoaXN0b3J5IjpbMjEyNjMyMjEwOSwtNTA3MjczNjc5LDEzNj
+gwODEyNjgsMTIwNTkyMjc2MiwtMTI2NDUwMDQwOCwtOTA3MjI4
+NDk5LDU1MDQyNjA2NCwxNDYwMjk5ODUxLDEyOTU2NzIyMDEsLT
+ExNDU2MjE3NjMsMTk1MDIyMTQ3NCwtMTk2MjAxNzkyNV19
 -->
