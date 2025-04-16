@@ -72,7 +72,7 @@ There are only 3 Pauli operators, $\{X,Y,Z\}$. These are the most important sing
 - Definitions in standard basis:
 $$X=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad
 Y=\begin{pmatrix}0&-i\\i&0\end{pmatrix},\qquad
-Z=\begin{pmatrix}0&1\\1&0\end{pmatrix}$$
+Z=\begin{pmatrix}1&0\\0&1\end{pmatrix}$$
 - Unitary: 
 $$X^\dag=X^{-1},\qquad Y^\dag=Y^{-1},\qquad Z^\dag=Z^{-1}$$
 - Hermitian: 
@@ -340,5 +340,5 @@ $$\braket{\psi|S|\psi}\geq0$$
 > Similar to the proof of [theorem 11](#theorem-11), $\braket{\psi|S|\psi}=\sum_k\lambda_k|\alpha_k|^2$.
 Since
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ1NDA0NDE1LC0xOTYyMDE3OTI1XX0=
+eyJoaXN0b3J5IjpbMjY4ODM0MTc1LC0xOTYyMDE3OTI1XX0=
 -->
