@@ -337,8 +337,9 @@ Since, both $\lambda_k$ and $|\alpha_k|^2$ is real, $\braket{\psi|H|\psi}\in\mat
 All the eigenvalues of Positive semi-definite operators are real and positive, $\lambda\geq0$.
 
 > ### Proof
-> Since $S$ is also a Hermitian operator by definition, according to [theorem 10](#theorem-10), all eigenvalues must be real. Moreover, since for any state $\braket{\psi|S|\psi}\geq0$, taking $\ket\psi$ to be the eigenvec
-Since 
+> Since $S$ is also a Hermitian operator by definition, according to [theorem 10](#theorem-10), all eigenvalues must be real. Moreover, since for any state $\braket{\psi|S|\psi}\geq0$, taking $\ket\psi$ to be the eigenvectors $\ket e$ with eigenvalue $\lambda$, we get,
+$$\braket{e|S|e}\geq0 \implies \braket{e|\lambda|e} = \lambda \$$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg0NjU3NDc5LC0xOTYyMDE3OTI1XX0=
+eyJoaXN0b3J5IjpbLTE1ODkwNTAwMzAsLTE5NjIwMTc5MjVdfQ
+==
 -->
