@@ -80,6 +80,7 @@ $$\lambda_k\in\{0,1\}$$
 
 - $$
 P^2=P\text{  and  }PP^\dag=P^\dag P\\
+\therefore (P^\dag)^2=\\
 \therefore PP^\dag P = P^\dag P^2=P^\dag P = PP^\dag
 $$
 
@@ -372,9 +373,9 @@ $$\begin{align*}
 & [\because\braket{e_k|e_k} = 1]
 \end{align*}$$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4OTMwMjE0NywtMTczMzQ3OTA3MSwyMT
-I2MzIyMTA5LC01MDcyNzM2NzksMTM2ODA4MTI2OCwxMjA1OTIy
-NzYyLC0xMjY0NTAwNDA4LC05MDcyMjg0OTksNTUwNDI2MDY0LD
-E0NjAyOTk4NTEsMTI5NTY3MjIwMSwtMTE0NTYyMTc2MywxOTUw
-MjIxNDc0LC0xOTYyMDE3OTI1XX0=
+eyJoaXN0b3J5IjpbLTE5MDk0NTk1ODEsLTQ4OTMwMjE0NywtMT
+czMzQ3OTA3MSwyMTI2MzIyMTA5LC01MDcyNzM2NzksMTM2ODA4
+MTI2OCwxMjA1OTIyNzYyLC0xMjY0NTAwNDA4LC05MDcyMjg0OT
+ksNTUwNDI2MDY0LDE0NjAyOTk4NTEsMTI5NTY3MjIwMSwtMTE0
+NTYyMTc2MywxOTUwMjIxNDc0LC0xOTYyMDE3OTI1XX0=
 -->
