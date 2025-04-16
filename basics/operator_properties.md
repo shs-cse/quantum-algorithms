@@ -82,7 +82,9 @@ $$\lambda_k\in\{0,1\}$$
 P^2=P\text{  and  }PP^\dag=P^\dag P\\
 \therefore (P^2)^\dag=P^\dag \implies P^\dag P^\dag = P^\dag\\
 \therefore (PP^\dag) P = (P^\dag P)P \implies PP^\dag P = P^\dag P\\
-
+\therefore (P-I)P^\dag P = 0\\
+\text{Similarly}, PP^\dag(P-I) = 0\\
+\dots
 $$
 
 ## Orthogonal Projection Operators $\left(P^2 =P=P^\dag\right)$
@@ -374,7 +376,7 @@ $$\begin{align*}
 & [\because\braket{e_k|e_k} = 1]
 \end{align*}$$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1NzY2NTQxMywtODEyMjQ4Mzk0LDE5NT
+eyJoaXN0b3J5IjpbLTI2MjkxMjIzMCwtODEyMjQ4Mzk0LDE5NT
 M0NTM5ODksLTQ4OTMwMjE0NywtMTczMzQ3OTA3MSwyMTI2MzIy
 MTA5LC01MDcyNzM2NzksMTM2ODA4MTI2OCwxMjA1OTIyNzYyLC
 0xMjY0NTAwNDA4LC05MDcyMjg0OTksNTUwNDI2MDY0LDE0NjAy
