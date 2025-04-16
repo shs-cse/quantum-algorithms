@@ -13,7 +13,7 @@ Although... the unitary is generated incorrectly. There should be double dash: "
 - Some other types of operators you should know:
    * [Positive-Semidefinite Operators $\left(S^\dag=S\succeq0\right)$](#positive-semidefinite-operators-leftsdagssucceq0right)
    * [Projection Operators $\left(P^2 =P\right)$](#projection-operators-leftp2-pright)
-   * [Pauli Group](#pauli-group)
+   * [Pauli Group $\left(\mathcal P\right)$](#pauli-group-leftmathcal-pright)
    * [Clifford Group $\left(C\mathcal PC^\dag=C\mathcal PC^{-1}=\mathcal P'\right)$](#clifford-group-leftcmathcal-pcdagcmathcal-pc-1mathcal-pright)
 
 
@@ -109,9 +109,9 @@ $$XY=-YX,\qquad YZ=-ZY,\qquad ZX=-XZ$$
 - Relation between Pauli operators:
 $$XY=iZ,\qquad YZ=iX,\qquad ZX=iY$$
 
-## Pauli Group
+## Pauli Group $\left(\mathcal P\right)$
 By including $I$ with Pauli operators and extending to $n$-qubits, we get Pauli group. In other words, $\mathcal P$ is an operator in Pauli group iff:
-$$\mathcal P = i^kP_1\otimes P_2\otimes \dots\otimes P_n\quad\text{where}\quad k\in\Z_4,~P_i\in\{I,X,Y,Z\}$$
+$$\mathcal P = i^k\cdot P_1\otimes P_2\otimes \dots\otimes P_n\quad\text{where}\quad k\in\Z_4,~P_i\in\{I,X,Y,Z\}$$
 
 ## Clifford Group $\left(C\mathcal PC^\dag=C\mathcal PC^{-1}=\mathcal P'\right)$
 Operators in Clifford group are unitary operators that map Pauli group to Pauli group by conjugation. For example, Hadamard operator $H$ is a Clifford operator because $$HIH^\dag=I,~HXH^\dag=Z,~HZH^\dag=X,~HYH^\dag=-Y,~iI=XYZ$$
@@ -366,8 +366,8 @@ $$\begin{align*}
 & [\because\braket{e_k|e_k} = 1]
 \end{align*}$$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2ODA4MTI2OCwxMjA1OTIyNzYyLC0xMj
-Y0NTAwNDA4LC05MDcyMjg0OTksNTUwNDI2MDY0LDE0NjAyOTk4
-NTEsMTI5NTY3MjIwMSwtMTE0NTYyMTc2MywxOTUwMjIxNDc0LC
-0xOTYyMDE3OTI1XX0=
+eyJoaXN0b3J5IjpbLTUwNzI3MzY3OSwxMzY4MDgxMjY4LDEyMD
+U5MjI3NjIsLTEyNjQ1MDA0MDgsLTkwNzIyODQ5OSw1NTA0MjYw
+NjQsMTQ2MDI5OTg1MSwxMjk1NjcyMjAxLC0xMTQ1NjIxNzYzLD
+E5NTAyMjE0NzQsLTE5NjIwMTc5MjVdfQ==
 -->
