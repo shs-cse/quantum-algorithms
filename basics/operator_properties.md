@@ -1,7 +1,18 @@
 # Properties of Some Important Operators on Hilbert Space (Finite Dimensional)
 - Any operator $(M)$ can be separated into Hermitian $(A)$ and anti-Hermitian $(iB)$ parts *[(proof)](#theorem-1)*:
 $$M = A+iB\text{\quad where\quad}A^\dag=A\text{~and~}B^\dag=B$$
-- Few important types of operators are as follows:
+- The most important types of operators are as follows:
+	* [Normal Operators $\left(N^\dag N=NN^\dag\right)$](#normal-operators-leftndag-nnndagright)
+   * [Unitary Operators $\left(U^\dag = U^{-1}\right)$](#unitary-operators-leftudag-u-1right)
+   * [Hermitian Operators $\left(H^\dag =H\right)$](#hermitian-operators-lefthdag-hright)
+   * [Positive-Semidefinite Operators $\left(S^\dag=S\succeq0\right)$](#positive-semidefinite-operators-leftsdagssucceq0right)
+   * [Projection Operators $\left(P^2 =P\right)$](#projection-operators-leftp2-pright)
+   * [Orthogonal Projection Operators $\left(P^2 =P=P^\dag\right)$](#orthogonal-projection-operators-leftp2-ppdagright)
+   * [Puali Operators $\{X,Y,Z\}$](#puali-operators-xyz)
+   * [Pauli Group](#pauli-group)
+   * [Clifford Group $\left(C\mathcal PC^\dag=C\mathcal PC^{-1}=\mathcal P'\right)$](#clifford-group-leftcmathcal-pcdagcmathcal-pc-1mathcal-pright)
+   * [Proofs](#proofs)
+
 
 
 
@@ -352,6 +363,7 @@ $$\begin{align*}
 & [\because\braket{e_k|e_k} = 1]
 \end{align*}$$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2MDI5OTg1MSwxMjk1NjcyMjAxLC0xMT
-Q1NjIxNzYzLDE5NTAyMjE0NzQsLTE5NjIwMTc5MjVdfQ==
+eyJoaXN0b3J5IjpbMTc4NzUxNzg3OCwxNDYwMjk5ODUxLDEyOT
+U2NzIyMDEsLTExNDU2MjE3NjMsMTk1MDIyMTQ3NCwtMTk2MjAx
+NzkyNV19
 -->
