@@ -49,7 +49,7 @@ Most authors also call them ***Positive operators***. But some author define Pos
 - Eigenvalues are non-negative, $\lambda_k\geq0$. And eigenvectors form orthonormal basis. *[(proof)](#theorem-12)*
 - Has a unique Positive *(and Hermitian)* square root, $S=R^2$ where, 
 $$R=\sum_k \sqrt{\lambda_k} \ket{e_k}\!\!\bra{e_k} \text{~where~}\braket{e_k|e_l}=\delta_{kl}$$
-- For any operator $M$, the operator $M^\dag M$ is always a positive operator.
+- For any operator $M$, the operator $M^\dag M$ is always a positive operator. Because for any state $\ket\psi$, 
 
 
 ## Projection Operators $\left(P^2 =P\right)$
@@ -350,5 +350,5 @@ $$\begin{align*}
 & [\because\braket{e_k|e_k} = 1]
 \end{align*}$$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2MjI5Njg3NiwtMTk2MjAxNzkyNV19
+eyJoaXN0b3J5IjpbLTM2NzI5NjUxNCwtMTk2MjAxNzkyNV19
 -->
