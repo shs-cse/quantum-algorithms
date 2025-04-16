@@ -74,8 +74,8 @@ Some authors mean Orthogonal projection operator. But Projection operators are m
 - If $P$ projects onto the subspace $X$, then for any $\ket x\in X$,
 $$P\!\ket x = \ket x$$
 And for any state $\ket y\notin X$, we have $P\!\ket y=0$.
-- Eigenvalues of $P$ are either $1$ or $0$:
-*(But eigenvectors are not necessarily orthogonal. So, may not be a positive operator.)*
+- Eigenvalues of $P$ are either $1$ or $0$. Because, $P^2\ket{e_k}$
+*(But eigenvectors are not necessarily orthogonal. So, may not be a normal/hermitian/positive operator.)*
 $$\lambda_k\in\{0,1\}$$
 
 ## Orthogonal Projection Operators $\left(P^2 =P=P^\dag\right)$
@@ -367,10 +367,11 @@ $$\begin{align*}
 & [\because\braket{e_k|e_k} = 1]
 \end{align*}$$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzM0NzkwNzEsLTI2MjkxMjIzMCwtOD
-EyMjQ4Mzk0LDE5NTM0NTM5ODksLTQ4OTMwMjE0NywtMTczMzQ3
-OTA3MSwyMTI2MzIyMTA5LC01MDcyNzM2NzksMTM2ODA4MTI2OC
-wxMjA1OTIyNzYyLC0xMjY0NTAwNDA4LC05MDcyMjg0OTksNTUw
-NDI2MDY0LDE0NjAyOTk4NTEsMTI5NTY3MjIwMSwtMTE0NTYyMT
-c2MywxOTUwMjIxNDc0LC0xOTYyMDE3OTI1XX0=
+eyJoaXN0b3J5IjpbMjA1NTM5NjA2MiwtMTczMzQ3OTA3MSwtMj
+YyOTEyMjMwLC04MTIyNDgzOTQsMTk1MzQ1Mzk4OSwtNDg5MzAy
+MTQ3LC0xNzMzNDc5MDcxLDIxMjYzMjIxMDksLTUwNzI3MzY3OS
+wxMzY4MDgxMjY4LDEyMDU5MjI3NjIsLTEyNjQ1MDA0MDgsLTkw
+NzIyODQ5OSw1NTA0MjYwNjQsMTQ2MDI5OTg1MSwxMjk1NjcyMj
+AxLC0xMTQ1NjIxNzYzLDE5NTAyMjE0NzQsLTE5NjIwMTc5MjVd
+fQ==
 -->
