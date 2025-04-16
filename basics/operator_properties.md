@@ -78,15 +78,6 @@ And for any state $\ket y\notin X$, we have $P\!\ket y=0$.
 *(But eigenvectors are not necessarily orthogonal. So, may not be a positive operator.)*
 $$\lambda_k\in\{0,1\}$$
 
-- $$
-P^2=P\text{  and  }PP^\dag=P^\dag P\\
-\therefore (P^2)^\dag=P^\dag \implies P^\dag P^\dag = P^\dag\\
-\therefore (PP^\dag) P = (P^\dag P)P \implies PP^\dag P = P^\dag P\\
-\therefore (P-I)P^\dag P = 0\\
-\text{Similarly}, PP^\dag(P-I) = 0\\
-\dots
-$$
-
 ## Orthogonal Projection Operators $\left(P^2 =P=P^\dag\right)$
 - By definition, $P$ is Hermitian (and by extension, also normal).
 - $P$ is also positive because the eigenvalues are either $1$ or $0$:
@@ -376,10 +367,10 @@ $$\begin{align*}
 & [\because\braket{e_k|e_k} = 1]
 \end{align*}$$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2MjkxMjIzMCwtODEyMjQ4Mzk0LDE5NT
-M0NTM5ODksLTQ4OTMwMjE0NywtMTczMzQ3OTA3MSwyMTI2MzIy
-MTA5LC01MDcyNzM2NzksMTM2ODA4MTI2OCwxMjA1OTIyNzYyLC
-0xMjY0NTAwNDA4LC05MDcyMjg0OTksNTUwNDI2MDY0LDE0NjAy
-OTk4NTEsMTI5NTY3MjIwMSwtMTE0NTYyMTc2MywxOTUwMjIxND
-c0LC0xOTYyMDE3OTI1XX0=
+eyJoaXN0b3J5IjpbLTE3MzM0NzkwNzEsLTI2MjkxMjIzMCwtOD
+EyMjQ4Mzk0LDE5NTM0NTM5ODksLTQ4OTMwMjE0NywtMTczMzQ3
+OTA3MSwyMTI2MzIyMTA5LC01MDcyNzM2NzksMTM2ODA4MTI2OC
+wxMjA1OTIyNzYyLC0xMjY0NTAwNDA4LC05MDcyMjg0OTksNTUw
+NDI2MDY0LDE0NjAyOTk4NTEsMTI5NTY3MjIwMSwtMTE0NTYyMT
+c2MywxOTUwMjIxNDc0LC0xOTYyMDE3OTI1XX0=
 -->
