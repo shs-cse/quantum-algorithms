@@ -1,4 +1,4 @@
-# Properties of Some Important Finite Dimensional Operators on Hilbert Space
+# Properties of Some Important Operators on Hilbert Space (Finite Dimensional)
 - Any operator $(M)$ can be separated into Hermitian $(A)$ and anti-Hermitian $(iB)$ parts *[(proof)](#theorem-1)*:
 $$M = A+iB\text{\quad where\quad}A^\dag=A\text{~and~}B^\dag=B$$
 
@@ -339,8 +339,8 @@ Since, both $\lambda_k$ and $|\alpha_k|^2$ is real, $\braket{\psi|H|\psi}\in\mat
 All the eigenvalues of Positive semi-definite operators are real and positive, $\lambda\geq0$.
 
 > ### Proof
-> Since $S$ is also a Hermitian operator by definition, according to [theorem 10](#theorem-10), all eigenvalues must be real. Moreover, since for any state $\braket{\psi|S|\psi}\geq0$, taking $\ket\psi$ to be the eigenvectors $\ket e$ with eigenvalue $\lambda$, we get,
-$$\braket{e|S|e}\geq0 \implies \braket{e|\lambda|e} \geq0 \implies \lambda\braket{e|e} = \lambda \geq0$$
+> Since $S$ is also a Hermitian operator by definition, according to [theorem 10](#theorem-10), all eigenvalues must be real. Moreover, since for any state $\braket{\psi|S|\psi}\geq0$, taking $\ket\psi$ to be the eigenvector $\ket{e_k}$ with eigenvalue $\lambda_k$, we get,
+$$\braket{e_k|S|e_k}\geq0 \implies \braket{e_k|\lambda_k|e_k} \geq0 \implies \lambda_k\braket{e_k|e_k} = \lambda_k \geq0$$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDAwMTkwMzIxLC0xOTYyMDE3OTI1XX0=
+eyJoaXN0b3J5IjpbMTI4MjczNjY3NywtMTk2MjAxNzkyNV19
 -->
