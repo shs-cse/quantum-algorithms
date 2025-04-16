@@ -334,11 +334,14 @@ Since, both $\lambda_k$ and $|\alpha_k|^2$ is real, $\braket{\psi|H|\psi}\in\mat
 
 
 ### Theorem 12
-If $S$ is a Positive Semi-definite operator, then for any state $\ket\psi$ in a Hilbert space, 
+All the eigenvalues of Positive semi operators are real,  λ∈Rλ∈R.
+
+>
 $$\braket{\psi|S|\psi}\geq0$$
 > ### Proof
 > Similar to the proof of [theorem 11](#theorem-11), $\braket{\psi|S|\psi}=\sum_k\lambda_k|\alpha_k|^2$.
 Since 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY0MDgxMDY0LC0xOTYyMDE3OTI1XX0=
+eyJoaXN0b3J5IjpbLTE2NDgyMDY2MzMsLTE5NjIwMTc5MjVdfQ
+==
 -->
