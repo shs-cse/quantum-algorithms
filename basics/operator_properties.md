@@ -81,7 +81,7 @@ $$\lambda_k\in\{0,1\}$$
 - $$
 P^2=P\text{  and  }PP^\dag=P^\dag P\\
 \therefore (P^2)^\dag=P^\dag \implies P^\dag P^\dag = P^\dag\\
-\therefore PP^\dag P = P^\dag P^2=P^\dag P = P^\dag P^\dag P
+\therefore PP^\dag P = P^\dag P^2=P^\dag P 
 $$
 
 ## Orthogonal Projection Operators $\left(P^2 =P=P^\dag\right)$
@@ -373,9 +373,10 @@ $$\begin{align*}
 & [\because\braket{e_k|e_k} = 1]
 \end{align*}$$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MzQ1Mzk4OSwtNDg5MzAyMTQ3LC0xNz
-MzNDc5MDcxLDIxMjYzMjIxMDksLTUwNzI3MzY3OSwxMzY4MDgx
-MjY4LDEyMDU5MjI3NjIsLTEyNjQ1MDA0MDgsLTkwNzIyODQ5OS
-w1NTA0MjYwNjQsMTQ2MDI5OTg1MSwxMjk1NjcyMjAxLC0xMTQ1
-NjIxNzYzLDE5NTAyMjE0NzQsLTE5NjIwMTc5MjVdfQ==
+eyJoaXN0b3J5IjpbLTgxMjI0ODM5NCwxOTUzNDUzOTg5LC00OD
+kzMDIxNDcsLTE3MzM0NzkwNzEsMjEyNjMyMjEwOSwtNTA3Mjcz
+Njc5LDEzNjgwODEyNjgsMTIwNTkyMjc2MiwtMTI2NDUwMDQwOC
+wtOTA3MjI4NDk5LDU1MDQyNjA2NCwxNDYwMjk5ODUxLDEyOTU2
+NzIyMDEsLTExNDU2MjE3NjMsMTk1MDIyMTQ3NCwtMTk2MjAxNz
+kyNV19
 -->
