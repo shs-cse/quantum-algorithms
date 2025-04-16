@@ -1,12 +1,12 @@
 # Properties of Some Important Operators on Hilbert Space (Finite Dimensional)
 - Any operator $(M)$ can be separated into Hermitian $(A)$ and anti-Hermitian $(iB)$ parts *[(proof)](#theorem-1)*:
 $$M = A+iB\text{\quad where\quad}A^\dag=A\text{~and~}B^\dag=B$$
-<!-- Table of contents generated below was generated with
--->
+<!-- Table of contents generated below was 
+generated with https://github.com/derlin/bitdowntoc-->
 - The most important types of operators are as follows:
 	* [Normal Operators $\left(N^\dag N=NN^\dag\right)$](#normal-operators-leftndag-nnndagright)
-	   * [Unitary Operators $\left(U^\dag = U^{-1}\right)$](#unitary-operators-leftudag-u-1right)
-	   * [Hermitian Operators $\left(H^\dag =H\right)$](#hermitian-operators-lefthdag-hright)
+	* [Unitary Operators $\left(U^\dag = U^{-1}\right)$](#unitary-operators-leftudag-u-1right)
+	* [Hermitian Operators $\left(H^\dag =H\right)$](#hermitian-operators-lefthdag-hright)
    * [Positive-Semidefinite Operators $\left(S^\dag=S\succeq0\right)$](#positive-semidefinite-operators-leftsdagssucceq0right)
    * [Projection Operators $\left(P^2 =P\right)$](#projection-operators-leftp2-pright)
    * [Orthogonal Projection Operators $\left(P^2 =P=P^\dag\right)$](#orthogonal-projection-operators-leftp2-ppdagright)
@@ -365,7 +365,7 @@ $$\begin{align*}
 & [\because\braket{e_k|e_k} = 1]
 \end{align*}$$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzYwMTQ5MzEyLDU1MDQyNjA2NCwxNDYwMj
-k5ODUxLDEyOTU2NzIyMDEsLTExNDU2MjE3NjMsMTk1MDIyMTQ3
-NCwtMTk2MjAxNzkyNV19
+eyJoaXN0b3J5IjpbLTE1Njg2NDA3NjIsNTUwNDI2MDY0LDE0Nj
+AyOTk4NTEsMTI5NTY3MjIwMSwtMTE0NTYyMTc2MywxOTUwMjIx
+NDc0LC0xOTYyMDE3OTI1XX0=
 -->
