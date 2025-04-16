@@ -78,6 +78,7 @@ And for any state $\ket y\notin X$, we have $P\!\ket y=0$.
 *(But eigenvectors are not necessarily orthogonal. So, may not be a positive operator.)*
 $$\lambda_k\in\{0,1\}$$
 
+
 ## Orthogonal Projection Operators $\left(P^2 =P=P^\dag\right)$
 - By definition, $P$ is Hermitian (and by extension, also normal).
 - $P$ is also positive because the eigenvalues are either $1$ or $0$:
@@ -367,9 +368,9 @@ $$\begin{align*}
 & [\because\braket{e_k|e_k} = 1]
 \end{align*}$$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzM0NzkwNzEsMjEyNjMyMjEwOSwtNT
-A3MjczNjc5LDEzNjgwODEyNjgsMTIwNTkyMjc2MiwtMTI2NDUw
-MDQwOCwtOTA3MjI4NDk5LDU1MDQyNjA2NCwxNDYwMjk5ODUxLD
-EyOTU2NzIyMDEsLTExNDU2MjE3NjMsMTk1MDIyMTQ3NCwtMTk2
-MjAxNzkyNV19
+eyJoaXN0b3J5IjpbNTQ3MDUzMDA3LC0xNzMzNDc5MDcxLDIxMj
+YzMjIxMDksLTUwNzI3MzY3OSwxMzY4MDgxMjY4LDEyMDU5MjI3
+NjIsLTEyNjQ1MDA0MDgsLTkwNzIyODQ5OSw1NTA0MjYwNjQsMT
+Q2MDI5OTg1MSwxMjk1NjcyMjAxLC0xMTQ1NjIxNzYzLDE5NTAy
+MjE0NzQsLTE5NjIwMTc5MjVdfQ==
 -->
