@@ -92,7 +92,7 @@ $$XY=iZ,\qquad YZ=iX,\qquad ZX=iY$$
 
 ## Pauli Group
 By including $I$ with Pauli operators and extending to $n$-qubits, we get Pauli group. In other words, $\mathcal P$ is an operator in Pauli group iff:
-$$\mathcal P = i^kP_1\otimes P_2\otimes \dots P_n\quad\text{where}\quad k\in\Z_4,~P_i\in\{I,X,Y,Z\}$$
+$$\mathcal P = i^kP_1\otimes P_2\otimes \dots\otimes P_n\quad\text{where}\quad k\in\Z_4,~P_i\in\{I,X,Y,Z\}$$
 
 ## Clifford Group $\left(C\mathcal PC^\dag=C\mathcal PC^{-1}=\mathcal P'\right)$
 Operators in Clifford group are unitary operators that map Pauli group to Pauli group by conjugation. For example, Hadamard operator $H$ is a Clifford operator because $$HIH^\dag=I,~HXH^\dag=Z,~HZH^\dag=X,~HYH^\dag=-Y,~iI=XYZ$$
@@ -100,7 +100,7 @@ Operators in Clifford group are unitary operators that map Pauli group to Pauli 
 - Any Clifford operator can be made from the operators $H,S,CX$. Here, $H$ is the Hadamard operator, $S$ is the $90\degree\!$-phase operator (i.e. $S^2=Z$) and $CX$ is the controlled not operation. In other words, these are the generators of the Clifford group:
 $$\mathcal C = \big\langle H,S,CX \big\rangle$$
 - Gottesman-Knill theorem states that any Clifford circuit starting with computation basis states and being measured in computational basis, can be efficiently simulated using classical computers. This is specially useful in stabilizer code.
-- Universal quantum gate sets require $T$ gate along side Clifford gates.
+- Clifford group does not constitute universal quantum gate sets. Universal quantum gate sets require $T$ gate along side Clifford gates.
 
 
 ## Proofs
@@ -338,7 +338,7 @@ If $S$ is a Positive Semi-definite operator, then for any state $\ket\psi$ in a 
 $$\braket{\psi|S|\psi}\geq0$$
 > ### Proof
 > Similar to the proof of [theorem 11](#theorem-11), $\braket{\psi|S|\psi}=\sum_k\lambda_k|\alpha_k|^2$.
-Since
+Since 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY4ODM0MTc1LC0xOTYyMDE3OTI1XX0=
+eyJoaXN0b3J5IjpbMjY0MDgxMDY0LC0xOTYyMDE3OTI1XX0=
 -->
