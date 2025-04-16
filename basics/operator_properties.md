@@ -46,9 +46,10 @@ Most authors also call them ***Positive operators***. But some author define Pos
 - The **defining** characteristics of positive operator is that for any state $\ket\psi$, we get, $$\braket{\psi|S|\psi} \geq 0$$
 - In a Hilbert space, it is can be proven that the definition implies that $S$ is also Hermitian, $S^\dag = S$.  So no need to explicitly mention that in case of Hilbert space. However, in real vector spaces, this is not the case and Hermicity must be included in the definition. 
 *For example, the operator that rotates real vectors by $60\degree$ in $\mathbb R^2$, $R(60\degree)$ on a real vector space, is not a positive operator because it's not Hermitian. Even though, for any normalized state $\ket\psi$, the inner product $\braket{\psi|R(60^\degree)|\psi}=\cos60^\degree=\frac12$. So, for any state $\ket\psi$, we have $\braket{\psi|R(60^\degree)|\psi}\geq0$.*
-- Eigenvalues are non-negative, $\lambda_k\geq0$. And eigenvectors form orthonormal basis. *[(proof)](#theorem-10)*
+- Eigenvalues are non-negative, $\lambda_k\geq0$. And eigenvectors form orthonormal basis. *[(proof)](#theorem-12)*
 - Has a unique Positive *(and Hermitian)* square root, $S=R^2$ where, 
 $$R=\sum_k \sqrt{\lambda_k} \ket{e_k}\!\!\bra{e_k} \text{~where~}\braket{e_k|e_l}=\delta_{kl}$$
+- 
 
 
 ## Projection Operators $\left(P^2 =P\right)$
@@ -349,5 +350,5 @@ $$\begin{align*}
 & [\because\braket{e_k|e_k} = 1]
 \end{align*}$$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg2Nzc1MzY5LC0xOTYyMDE3OTI1XX0=
+eyJoaXN0b3J5IjpbMjEzODUyNzUzMiwtMTk2MjAxNzkyNV19
 -->
