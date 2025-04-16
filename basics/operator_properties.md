@@ -50,7 +50,7 @@ Most authors also call them ***Positive operators***. But some author define Pos
 - Has a unique Positive *(and Hermitian)* square root, $S=R^2$ where, 
 $$R=\sum_k \sqrt{\lambda_k} \ket{e_k}\!\!\bra{e_k} \text{~where~}\braket{e_k|e_l}=\delta_{kl}$$
 - For any operator $M$, the operator $M^\dag M$ is always a positive operator. Because for any state $\ket\psi$, we get,
-$$\braket{\psi|M^\dag M|\psi} = \big\lVert||M\ket\psi\bigrVert$$
+$$\braket{\psi|M^\dag M|\psi} = \big\lVert M\ket\psi\big\rVert^2\geq0$$
 
 
 ## Projection Operators $\left(P^2 =P\right)$
@@ -351,5 +351,5 @@ $$\begin{align*}
 & [\because\braket{e_k|e_k} = 1]
 \end{align*}$$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1MTg0OTgxMywtMTk2MjAxNzkyNV19
+eyJoaXN0b3J5IjpbMTk1MDIyMTQ3NCwtMTk2MjAxNzkyNV19
 -->
