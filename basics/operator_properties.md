@@ -80,6 +80,7 @@ $$\lambda_k\in\{0,1\}$$
 
 - $$
 P^2=P\text{  and  }PP^\dag=P^\dag P\\
+\therefore PP^\dag P = P^\dag P^2=P^\dag P = PP^\dag
 $$
 
 ## Orthogonal Projection Operators $\left(P^2 =P=P^\dag\right)$
@@ -371,7 +372,7 @@ $$\begin{align*}
 & [\because\braket{e_k|e_k} = 1]
 \end{align*}$$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxOTc4MDAxNCwtMTczMzQ3OTA3MSwyMT
+eyJoaXN0b3J5IjpbLTQ4OTMwMjE0NywtMTczMzQ3OTA3MSwyMT
 I2MzIyMTA5LC01MDcyNzM2NzksMTM2ODA4MTI2OCwxMjA1OTIy
 NzYyLC0xMjY0NTAwNDA4LC05MDcyMjg0OTksNTUwNDI2MDY0LD
 E0NjAyOTk4NTEsMTI5NTY3MjIwMSwtMTE0NTYyMTc2MywxOTUw
