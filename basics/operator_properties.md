@@ -1,6 +1,8 @@
 # Properties of Some Important Operators on Hilbert Space (Finite Dimensional)
 - Any operator $(M)$ can be separated into Hermitian $(A)$ and anti-Hermitian $(iB)$ parts *[(proof)](#theorem-1)*:
 $$M = A+iB\text{\quad where\quad}A^\dag=A\text{~and~}B^\dag=B$$
+<!-- Table of contents generated below was generated with
+-->
 - The most important types of operators are as follows:
 	* [Normal Operators $\left(N^\dag N=NN^\dag\right)$](#normal-operators-leftndag-nnndagright)
    * [Unitary Operators $\left(U^\dag = U^{-1}\right)$](#unitary-operators-leftudag-u-1right)
@@ -363,7 +365,7 @@ $$\begin{align*}
 & [\because\braket{e_k|e_k} = 1]
 \end{align*}$$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4NzUxNzg3OCwxNDYwMjk5ODUxLDEyOT
-U2NzIyMDEsLTExNDU2MjE3NjMsMTk1MDIyMTQ3NCwtMTk2MjAx
-NzkyNV19
+eyJoaXN0b3J5IjpbNTUwNDI2MDY0LDE0NjAyOTk4NTEsMTI5NT
+Y3MjIwMSwtMTE0NTYyMTc2MywxOTUwMjIxNDc0LC0xOTYyMDE3
+OTI1XX0=
 -->
